@@ -20,9 +20,25 @@ export default function Layout({ children, title = 'T4 Group' }: LayoutProps) {
         </div>
       </header>
       <main>{children}</main>
-      <footer>
-        <div className="container">
-          <p>&copy; 2025 T4 Group. All rights reserved.</p>
+      <footer style={{ backgroundColor: '#1a1a1a', color: '#f5f5f5', padding: '2rem 0' }}>
+        <div className="container" style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 1rem' }}>
+          <div style={{ 
+            display: 'flex', 
+            flexDirection: 'column', 
+            gap: '0.75rem',
+            fontSize: '0.875rem',
+            lineHeight: '1.5'
+          }}>
+            <p style={{ margin: 0, fontWeight: '600' }}>
+              T4 GROUP LTD — Company No. 15258159
+            </p>
+            <p style={{ margin: 0 }}>
+              Registered office: 86-90 Paul Street, London, EC2A 4NE
+            </p>
+            <p style={{ margin: 0 }}>
+              © 2025 T4 Group. All rights reserved.
+            </p>
+          </div>
         </div>
       </footer>
     </>
