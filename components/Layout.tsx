@@ -22,11 +22,11 @@ export default function Layout({ children, title = 'T4 Group' }: LayoutProps) {
       <main>
         {children}
       </main>
-      <footer>
-        <div className="container">
-          <p>T4 GROUP LTD — Company No. 15258159</p>
-          <p>Registered office: 86-90 Paul Street, London, EC2A 4NE</p>
-          <p>© 2025 T4 Group. All rights reserved.</p>
+      <footer style={{ padding: '16px 0', color: '#9ca3af', borderTop: '1px solid rgba(255,255,255,0.15)', fontSize: '14px', textAlign: 'center', background: 'transparent' }}>
+        <div>
+          <div>T4 GROUP LTD — Company No. 15258159</div>
+          <div>Registered office: 86-90 Paul Street, London, EC2A 4NE</div>
+          <div>© 2025 T4 Group. All rights reserved.</div>
         </div>
       </footer>
     </>
